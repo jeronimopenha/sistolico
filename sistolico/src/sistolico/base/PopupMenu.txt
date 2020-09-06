@@ -1,0 +1,171 @@
+# Hades ObjectCanvas popup menu description, fnh, 29.01.2002
+# with tab- or space separated entries
+# use \uffff notation for special chars
+#
+# Menu menu_name
+# SubMenu parent_menu_name sub_menu_name
+# MenuSeparator parent_menu_name
+# MenuItem parent_menu_name item_name callback_method_name callback_argument_or_null
+#
+#
+#Menu addAsync
+#SubMenu addAsync accumulator
+#MenuItem accumulator asyncAccAdd          doPopupCreate add.dataflow.async.AsyncAccAdd
+#MenuItem accumulator asyncAccMax          doPopupCreate add.dataflow.async.AsyncAccMax
+#MenuItem accumulator asyncAccMin          doPopupCreate add.dataflow.async.AsyncAccMin
+#MenuItem accumulator asyncAccMul          doPopupCreate add.dataflow.async.AsyncAccMul
+#SubMenu addAsync arithmetic
+#MenuItem arithmetic asyncAbs              doPopupCreate add.dataflow.async.AsyncAbs
+#MenuSeparator arithmetic
+#MenuItem arithmetic asyncAdd              doPopupCreate add.dataflow.async.AsyncAdd
+#MenuItem arithmetic asyncDiv              doPopupCreate add.dataflow.async.AsyncDiv
+#MenuItem arithmetic asyncMod              doPopupCreate add.dataflow.async.AsyncMod
+#MenuItem arithmetic asyncMul              doPopupCreate add.dataflow.async.AsyncMul
+#MenuItem arithmetic asyncSub              doPopupCreate add.dataflow.async.AsyncSub
+#MenuSeparator arithmetic
+#MenuItem arithmetic asyncAddI             doPopupCreate add.dataflow.async.AsyncAddI
+#MenuItem arithmetic asyncDivI             doPopupCreate add.dataflow.async.AsyncDivI
+#MenuItem arithmetic asyncModI             doPopupCreate add.dataflow.async.AsyncModI
+#MenuItem arithmetic asyncMulI             doPopupCreate add.dataflow.async.AsyncMulI
+#MenuItem arithmetic asyncSubI             doPopupCreate add.dataflow.async.AsyncSubI
+#SubMenu addAsync branches
+#MenuItem branches asyncBeq                doPopupCreate add.dataflow.async.AsyncBeq
+#MenuItem branches asyncBne                doPopupCreate add.dataflow.async.AsyncBne
+#MenuSeparator branches
+#MenuItem branches asyncBeqI               doPopupCreate add.dataflow.async.AsyncBeqI
+#MenuItem branches asyncBneI               doPopupCreate add.dataflow.async.AsyncBneI
+#MenuSeparator branches
+#MenuItem branches asyncMerge              doPopupCreate add.dataflow.async.AsyncMerge
+#MenuItem branches asyncTgate              doPopupCreate add.dataflow.async.AsyncTgate
+#MenuItem branches asyncFgate              doPopupCreate add.dataflow.async.AsyncFgate
+#MenuItem branches asyncMux                doPopupCreate add.dataflow.async.AsyncMux
+#MenuItem branches asyncDemux              doPopupCreate add.dataflow.async.AsyncDemux
+#SubMenu addAsync comparison
+#MenuItem comparison asyncMax              doPopupCreate add.dataflow.async.AsyncMax
+#MenuItem comparison asyncMin              doPopupCreate add.dataflow.async.AsyncMin
+#MenuItem comparison asyncSlt              doPopupCreate add.dataflow.async.AsyncSlt
+#MenuItem comparison asyncSltI             doPopupCreate add.dataflow.async.AsyncSltI
+#SubMenu addAsync histogram
+#MenuItem histogram asyncHistogram         doPopupCreate add.dataflow.async.AsyncHistogram
+#SubMenu addAsync inOut
+#MenuItem inOut asyncIn                    doPopupCreate add.dataflow.async.AsyncIn
+#MenuSeparator inOut
+#MenuItem inOut asyncOut                   doPopupCreate add.dataflow.async.AsyncOut
+#SubMenu addAsync logical
+#MenuItem logical asyncAnd                 doPopupCreate add.dataflow.async.AsyncAnd
+#MenuItem logical asyncNot                 doPopupCreate add.dataflow.async.AsyncNot
+#MenuItem logical asyncOr                  doPopupCreate add.dataflow.async.AsyncOr
+#MenuItem logical asyncXor                 doPopupCreate add.dataflow.async.AsyncXor
+#MenuSeparator logical
+#MenuItem logical asyncAndI                doPopupCreate add.dataflow.async.AsyncAndI
+#MenuItem logical asyncOrI                 doPopupCreate add.dataflow.async.AsyncOrI
+#MenuItem logical asyncXorI                doPopupCreate add.dataflow.async.AsyncXorI
+#SubMenu addAsync register
+#MenuItem register asyncRegister           doPopupCreate add.dataflow.async.AsyncRegister
+#SubMenu addAsync shift
+#MenuItem shift asyncShl                   doPopupCreate add.dataflow.async.AsyncShl
+#MenuItem shift asyncShr                   doPopupCreate add.dataflow.async.AsyncShr
+#MenuSeparator shift
+#MenuItem shift asyncShlI                  doPopupCreate add.dataflow.async.AsyncShlI
+#MenuItem shift asyncShrI                  doPopupCreate add.dataflow.async.AsyncShrI
+#SubMenu addAsync copy
+#MenuItem copy asyncCpBranch               doPopupCreate add.dataflow.async.AsyncCpBranch
+#MenuItem copy asyncCpData                 doPopupCreate add.dataflow.async.AsyncCpData
+#MenuItem copy asyncQueue                  doPopupCreate add.dataflow.async.AsyncQueue
+#SubMenu addAsync grn
+#MenuItem grn asyncGrn                     doPopupCreate add.dataflow.async.AsyncGrn
+#
+#Menu addSync
+#SubMenu addSync accumulator
+#MenuItem accumulator syncAccAdd           doPopupCreate add.dataflow.sync.SyncAccAdd
+#MenuItem accumulator syncAccMax           doPopupCreate add.dataflow.sync.SyncAccMax
+#MenuItem accumulator syncAccMin           doPopupCreate add.dataflow.sync.SyncAccMin
+#MenuItem accumulator syncAccMul           doPopupCreate add.dataflow.sync.SyncAccMul
+#SubMenu addSync arithmetic
+#MenuItem arithmetic syncAbs               doPopupCreate add.dataflow.sync.SyncAbs
+#MenuSeparator arithmetic
+#MenuItem arithmetic syncAdd               doPopupCreate add.dataflow.sync.SyncAdd
+#MenuItem arithmetic syncDiv               doPopupCreate add.dataflow.sync.SyncDiv
+#MenuItem arithmetic syncMod               doPopupCreate add.dataflow.sync.SyncMod
+#MenuItem arithmetic syncMul               doPopupCreate add.dataflow.sync.SyncMul
+#MenuItem arithmetic syncSub               doPopupCreate add.dataflow.sync.SyncSub
+#MenuSeparator arithmetic
+#MenuItem arithmetic syncAddI              doPopupCreate add.dataflow.sync.SyncAddI
+#MenuItem arithmetic syncDivI              doPopupCreate add.dataflow.sync.SyncDivI
+#MenuItem arithmetic syncModI              doPopupCreate add.dataflow.sync.SyncModI
+#MenuItem arithmetic syncMulI              doPopupCreate add.dataflow.sync.SyncMulI
+#MenuItem arithmetic syncSubI              doPopupCreate add.dataflow.sync.SyncSubI
+#MenuSeparator arithmetic
+#MenuItem arithmetic syncCounter           doPopupCreate add.dataflow.sync.SyncCounter
+#MenuItem arithmetic syncConst             doPopupCreate add.dataflow.sync.SyncConst
+#SubMenu addSync branches
+#MenuItem branches syncBeq                 doPopupCreate add.dataflow.sync.SyncBeq
+#MenuItem branches syncBne                 doPopupCreate add.dataflow.sync.SyncBne
+#MenuSeparator branches
+#MenuItem branches syncBeqI                doPopupCreate add.dataflow.sync.SyncBeqI
+#MenuItem branches syncBneI                doPopupCreate add.dataflow.sync.SyncBneI
+#MenuSeparator branches
+#MenuItem branches syncMerge               doPopupCreate add.dataflow.sync.SyncMerge
+#MenuItem branches syncTgate               doPopupCreate add.dataflow.sync.SyncTgate
+#MenuItem branches syncFgate               doPopupCreate add.dataflow.sync.SyncFgate
+#MenuItem branches syncMux                 doPopupCreate add.dataflow.sync.SyncMux
+#MenuItem branches syncDemux               doPopupCreate add.dataflow.sync.SyncDemux
+#SubMenu addSync comparison
+#MenuItem comparison syncMax               doPopupCreate add.dataflow.sync.SyncMax
+#MenuItem comparison syncMin               doPopupCreate add.dataflow.sync.SyncMin
+#MenuItem comparison syncSlt               doPopupCreate add.dataflow.sync.SyncSlt
+#MenuItem comparison syncSltI              doPopupCreate add.dataflow.sync.SyncSltI
+#SubMenu addSync histogram
+#MenuItem histogram syncHistogram          doPopupCreate add.dataflow.sync.SyncHistogram
+#SubMenu addSync inOut
+#MenuItem inOut syncIn                     doPopupCreate add.dataflow.sync.SyncIn
+#MenuSeparator inOut
+#MenuItem inOut syncOut                    doPopupCreate add.dataflow.sync.SyncOut
+#SubMenu addSync logical
+#MenuItem logical syncAnd                  doPopupCreate add.dataflow.sync.SyncAnd
+#MenuItem logical syncNot                  doPopupCreate add.dataflow.sync.SyncNot
+#MenuItem logical syncOr                   doPopupCreate add.dataflow.sync.SyncOr
+#MenuItem logical syncXor                  doPopupCreate add.dataflow.sync.SyncXor
+#MenuSeparator logical
+#MenuItem logical syncAndI                 doPopupCreate add.dataflow.sync.SyncAndI
+#MenuItem logical syncOrI                  doPopupCreate add.dataflow.sync.SyncOrI
+#MenuItem logical syncXorI                 doPopupCreate add.dataflow.sync.SyncXorI
+#SubMenu addSync register
+#MenuItem register syncRegister            doPopupCreate add.dataflow.sync.SyncRegister
+#MenuItem register syncMemory              doPopupCreate add.dataflow.sync.SyncMemory
+#SubMenu addSync shift
+#MenuItem shift syncShl                    doPopupCreate add.dataflow.sync.SyncShl
+#MenuItem shift syncShr                    doPopupCreate add.dataflow.sync.SyncShr
+#MenuSeparator shift
+#MenuItem shift syncShlI                   doPopupCreate add.dataflow.sync.SyncShlI
+#MenuItem shift syncShrI                   doPopupCreate add.dataflow.sync.SyncShrI
+#SubMenu addSync Knn
+#MenuItem Knn syncKnnCtrl                  doPopupCreate add.dataflow.sync.SyncKnnCtrl
+#MenuItem Knn syncKnnQueue                 doPopupCreate add.dataflow.sync.SyncKnnQueue
+#
+Menu wire
+MenuItem wire connect                     doPopupCreateSignal null
+MenuItem wire move\u0020point             doPopupSignalMovePoint null
+MenuItem wire add\u0020segment            doPopupSignalAddSegment null
+MenuItem wire insert\u0020vertex          doPopupSignalInsertVertex null
+MenuItem wire delete\u0020segment         doPopupSignalDeleteSegment null
+MenuItem wire name\u0020signal            doPopupSignalChangeName null
+MenuSeparator wire
+MenuItem wire add\u0020probe              doPopupSignalAddProbe null
+MenuItem wire remove\u0020probe           doPopupSignalDeleteProbe null
+MenuSeparator wire
+MenuItem wire set\u0020logical\u00200     doSignalSetZero null
+MenuItem wire set\u0020logical\u00201     doSignalSetOne null
+MenuItem wire set\u0020logical\u0020X     doSignalSetX null
+MenuSeparator wire
+MenuItem wire disconnect\u0020Port        doPopupDisconnectPort null
+MenuItem wire disconnect\u0020SimObject   doPopupDisconnect null
+MenuItem wire autoconnect\u0020SimObject  doPopupAutoconnect null
+#
+MenuSeparator popup
+MenuItem popup move                       doPopupMove null
+MenuItem popup copy                       doPopupCopy null
+MenuItem popup edit                       doPopupEdit null
+MenuItem popup name                       doPopupName null
+MenuSeparator popup
+MenuItem popup delete                     doPopupDelete null
